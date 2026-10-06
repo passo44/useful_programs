@@ -1,2 +1,3 @@
-![baner](wykres.png)
+![baner](internetia_2.gif)
+
 # ***netia***
