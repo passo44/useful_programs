@@ -1,1 +1,2 @@
-
+![baner](wykres.png)
+# ***netia***
