@@ -19,9 +19,10 @@ Pan Józef K. tłumaczy działanie najnowszej usługi
 następująco: "[przekaz] myśli.. pan sobie myśli, że   
 pan dzwoni. ...a ja myślę, że odbieram"               
 ```
-<img src="dlugi_pasek">
+<img src="dlugi_pasek.gif">
 
-<img src="internetowa_ksiazka.gif" align="right" width="230" style="margin-left: 20px;">
+
+<img src="kontakt_z_konsultantem.jpg" align="right" width="230" style="margin-left: 20px;">
 
 **Co wyróżnia naszą ofertę?**  
 Oferujemy usługę przekazu opartą na wyjątkowych w skali całego rynku,<br> bardzo atrakcyjnych warunkach:
