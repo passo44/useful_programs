@@ -9,8 +9,7 @@
 
 # `[ netia.pl ] ─── USŁUGI INTERNETOWE ─── [ NOWOŚĆ: PRZEKAZ ]`
 ## `[ Przekaz ]`
-jeden z naszych klientów opowiada:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>"no, Panie, żebym ja jeszcze za myśli abonament płacił"<br>Pan Józef K. tłumaczy działanie najnowszej usługi<br>następująco: "[przekaz] myśli.. pan sobie myśli,<br>że pan dzwoni. ...a ja myślę, że odbieram"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TUTAJ_WKLEJ_KOD_GIFA
-
+**jeden z naszych klientów opowiada**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>"no, Panie, żebym ja jeszcze za myśli abonament płacił"<br>Pan Józef K. tłumaczy działanie najnowszej usługi<br>następująco: "[przekaz] myśli.. pan sobie myśli,<br>że pan dzwoni. ...a ja myślę, że odbieram"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="banner_sklep71b.swf" width="300">
 
 
 
