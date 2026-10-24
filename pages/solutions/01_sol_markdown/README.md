@@ -19,21 +19,22 @@ Pan Józef K. tłumaczy działanie najnowszej usługi
 następująco: "[przekaz] myśli.. pan sobie myśli, że   
 pan dzwoni. ...a ja myślę, że odbieram"               
 ```
+<img src="dlugi_pasek">
 
-<div align="right" style="float: right; margin-left: 20px;">
-  <img src="internetowa_ksiazka.gif" width="230" style="display: block; margin-bottom: 10px;"><br>
-  <img src="internetowa_ksiazka.gif" width="230" style="display: block;">
-</div>
+<img src="internetowa_ksiazka.gif" align="right" width="230" style="margin-left: 20px;">
 
 **Co wyróżnia naszą ofertę?**  
-Oferujemy usługę przekazu opartą na wyjątkowych w skali całego <br> rynku, bardzo atrakcyjnych warunkach:
+Oferujemy usługę przekazu opartą na wyjątkowych w skali całego rynku,<br> bardzo atrakcyjnych warunkach:
 - naliczanie sekundowe
 - przekaz myśli jest też na połączenia komórkowe również
 - zasięg za granice nie.. nie, bo za granicą jest diabeł 
-- internet w takiej usłudze? jest. tylko lepiej w nocy. <br>
-  bo wtedy ludzie śpiom i mniej ludzi myśli.. i nie ma zakłóceń
+- internet w takiej usłudze? jest. tylko lepiej w nocy. <br>bo wtedy ludzie śpiom i mniej ludzi myśli.. i nie ma zakłóceń
 
 <br clear="right"/>
+
+
+
+
 
 
 
