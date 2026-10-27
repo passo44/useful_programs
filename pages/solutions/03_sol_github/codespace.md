@@ -1,0 +1,10 @@
+- Tytus
+- Romek
+- Atomek
+- Jonathan Joestar
+- Joseph Joestar
+- Jotaro Kujo
+- Josuke Higashikatta
+- Giorno Giovani
+- Jolyne Cujoh
+- Johnny Joestar
