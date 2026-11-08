@@ -31,7 +31,11 @@ Początek układu współrzędnych znajduje się w miejscu wyrzutu. Oś $x$ jest
 - Pole grawitacyjne jest jednorodne, a przyspieszenie ziemskie wynosi $g=9{,}81\,\mathrm{m/s^2}$.
 - Prędkość początkowa ma wartość $v_0=34\,\mathrm{m/s}$, a kąt z poziomem to $\alpha=3^\circ=0{,}05236\,\mathrm{rad}$.
 - W modelu idealnym jedyną siłą jest ciężar.
-- W modelu z oporem przyjmujemy siłę liniową $\vec F_d=-b\vec v$, gdzie $b=0{,}020\,\mathrm{kg/s}$.
+- W modelu z oporem przyjmujemy siłę liniową przeciwną do prędkości, gdzie $b=0{,}020\,\mathrm{kg/s}$:
+
+$$
+\vec{F}_d=-b\vec{v}.
+$$
 - Masa wynosi $m=0{,}150\,\mathrm{kg}$. Wartość $b$ jest przykładowym parametrem modelu, a nie wynikiem pomiaru dla konkretnego obiektu.
 
 W zapisie obliczeniowym kąty są zamieniane na radiany. Stopnie pozostają w podpisach wykresów, aby bezpośrednio pokazać zadane $3^\circ$. Pozostałe wielkości fizyczne podajemy w jednostkach SI.
@@ -45,7 +49,7 @@ W zapisie obliczeniowym kąty są zamieniane na radiany. Stopnie pozostają w po
 | $a_x$, $a_y$, $g$ | składowe przyspieszenia i przyspieszenie ziemskie | $\mathrm{m/s^2}$ |
 | $m$ | masa ciała | $\mathrm{kg}$ |
 | $b$ | współczynnik oporu liniowego | $\mathrm{kg/s}=\mathrm{N\,s/m}$ |
-| $\lambda=b/m$ | odwrotność czasu relaksacji | $\mathrm{s^{-1}}$ |
+| $\lambda=\dfrac{b}{m}$ | odwrotność czasu relaksacji | $\mathrm{s^{-1}}$ |
 | $t$, $T$ | czas i czas lotu | $\mathrm{s}$ |
 | $R$, $H$ | zasięg i maksymalna wysokość | $\mathrm{m}$ |
 | $E_k$, $E_p$ | energia kinetyczna i potencjalna | $\mathrm{J}$ |
@@ -83,30 +87,42 @@ Całkowanie prędkości daje położenie:
 $$
 \begin{aligned}
 x(t) &= v_0\cos\alpha\,t,\\
-y(t) &= v_0\sin\alpha\,t-\frac{1}{2}gt^2.
+y(t) &= v_0\sin\alpha\,t-\dfrac{1}{2}gt^2.
 \end{aligned}
 $$
 
 ### 2.2. Trajektoria, czas lotu i zasięg
 
-Z pierwszego równania wynika $t=x/(v_0\cos\alpha)$. Podstawienie do równania pionowego eliminuje czas i daje parabolę:
+Z pierwszego równania wyznaczamy czas:
 
 $$
-y(x)=x\tan\alpha-\frac{g x^2}{2v_0^2\cos^2\alpha}.
+t=\dfrac{x}{v_0\cos\alpha}.
+$$
+
+Podstawienie do równania pionowego eliminuje czas i daje parabolę:
+
+$$
+y(x)=x\tan\alpha-\dfrac{g x^2}{2v_0^2\cos^2\alpha}.
 $$
 
 Ciało wraca na poziom wyrzutu, gdy $y(t)=0$. Oprócz rozwiązania $t=0$ otrzymujemy czas lotu $T$ i zasięg $R$:
 
 $$
-T=\frac{2v_0\sin\alpha}{g},
+T=\dfrac{2v_0\sin\alpha}{g},
 \qquad
-R=x(T)=\frac{v_0^2\sin(2\alpha)}{g}.
+R=x(T)=\dfrac{v_0^2\sin(2\alpha)}{g}.
 $$
 
-W wierzchołku toru prędkość pionowa zanika: $v_y=0$. Stąd czas wznoszenia $t_H=v_0\sin\alpha/g$, a maksymalna wysokość wynosi:
+W wierzchołku toru prędkość pionowa zanika: $v_y=0$. Czas wznoszenia wynosi:
 
 $$
-H=y(t_H)=\frac{v_0^2\sin^2\alpha}{2g}.
+t_H=\dfrac{v_0\sin\alpha}{g}.
+$$
+
+Maksymalna wysokość wynosi:
+
+$$
+H=y(t_H)=\dfrac{v_0^2\sin^2\alpha}{2g}.
 $$
 
 Dla $v_0=34\,\mathrm{m/s}$ oraz $\alpha=3^\circ$ otrzymujemy $T\approx0{,}36278\,\mathrm{s}$, $R\approx12{,}31752\,\mathrm{m}$ i $H\approx0{,}16138\,\mathrm{m}$. Mała wysokość wynika bezpośrednio z małej składowej pionowej prędkości.
@@ -139,7 +155,7 @@ W tym modelu składowa pozioma prędkości jest stała, a pionowa maleje liniowo
 
 ### 4.1. Druga zasada Newtona
 
-Dla prędkości $\vec v=(v_x,v_y)$ siła oporu ma składowe przeciwne do ruchu. Z grawitacją $\vec F_g=(0,-mg)$ równanie Newtona przyjmuje postać:
+Dla prędkości $\vec{v}=(v_x,v_y)$ siła oporu ma składowe przeciwne do ruchu. Z grawitacją $\vec{F}_g=(0,-mg)$ równanie Newtona przyjmuje postać:
 
 $$
 m\dot{v}_x=-bv_x,
@@ -147,7 +163,14 @@ m\dot{v}_x=-bv_x,
 m\dot{v}_y=-mg-bv_y.
 $$
 
-Wprowadzamy parametr $\lambda=b/m$, o jednostce $\mathrm{s^{-1}}$. Równania prędkości są wtedy liniowymi równaniami różniczkowymi pierwszego rzędu:
+Wprowadzamy parametr tłumienia:
+
+$$
+\lambda=\dfrac{b}{m},
+\qquad [\lambda]=\mathrm{s^{-1}}.
+$$
+
+Równania prędkości są wtedy liniowymi równaniami różniczkowymi pierwszego rzędu:
 
 $$
 \dot{v}_x+\lambda v_x=0,
@@ -155,12 +178,18 @@ $$
 \dot{v}_y+\lambda v_y=-g.
 $$
 
-Pierwsze rozwiązujemy przez rozdzielenie zmiennych: $dv_x/v_x=-\lambda\,dt$. Po użyciu $v_x(0)=v_{0x}$ otrzymujemy $v_x=v_{0x}e^{-\lambda t}$. W równaniu pionowym rozwiązanie jednorodne jest proporcjonalne do $e^{-\lambda t}$, a rozwiązanie szczególne jest stałe $-g/\lambda$. Ustalenie stałej z $v_y(0)=v_{0y}$ daje:
+Pierwsze rozwiązujemy przez rozdzielenie zmiennych:
+
+$$
+\dfrac{dv_x}{v_x}=-\lambda\,dt.
+$$
+
+Po użyciu $v_x(0)=v_{0x}$ otrzymujemy $v_x=v_{0x}e^{-\lambda t}$. W równaniu pionowym rozwiązanie jednorodne jest proporcjonalne do $e^{-\lambda t}$, a rozwiązanie szczególne jest stałe $-\dfrac{g}{\lambda}$. Ustalenie stałej z $v_y(0)=v_{0y}$ daje:
 
 $$
 \begin{aligned}
 v_x(t) &= v_{0x}e^{-\lambda t},\\
-v_y(t) &= \left(v_{0y}+\frac{g}{\lambda}\right)e^{-\lambda t}-\frac{g}{\lambda}.
+v_y(t) &= \left(v_{0y}+\dfrac{g}{\lambda}\right)e^{-\lambda t}-\dfrac{g}{\lambda}.
 \end{aligned}
 $$
 
@@ -168,20 +197,26 @@ Całkujemy składowe prędkości i używamy $x(0)=y(0)=0$:
 
 $$
 \begin{aligned}
-x(t) &= \frac{v_{0x}}{\lambda}\left(1-e^{-\lambda t}\right),\\
-y(t) &= \frac{1}{\lambda}\left(v_{0y}+\frac{g}{\lambda}\right)
-       \left(1-e^{-\lambda t}\right)-\frac{g}{\lambda}t.
+x(t) &= \dfrac{v_{0x}}{\lambda}\left(1-e^{-\lambda t}\right),\\
+y(t) &= \dfrac{1}{\lambda}\left(v_{0y}+\dfrac{g}{\lambda}\right)
+    \left(1-e^{-\lambda t}\right)-\dfrac{g}{\lambda}t.
 \end{aligned}
 $$
 
-Wartość $b=0{,}020\,\mathrm{kg/s}$ przy masie $m=0{,}150\,\mathrm{kg}$ odpowiada $\lambda=0{,}13333\,\mathrm{s^{-1}}$ i czasowi relaksacji $1/\lambda=7{,}5\,\mathrm{s}$. Jest to znacznie więcej niż czas lotu w tym przykładzie, dlatego wpływ oporu jest umiarkowany.
+Wartość $b=0{,}020\,\mathrm{kg/s}$ przy masie $m=0{,}150\,\mathrm{kg}$ odpowiada $\lambda=0{,}13333\,\mathrm{s^{-1}}$. Czas relaksacji wynosi:
+
+$$
+T_{\mathrm{rel}}=\dfrac{1}{\lambda}=7{,}5\,\mathrm{s}.
+$$
+
+Jest to znacznie więcej niż czas lotu w tym przykładzie, dlatego wpływ oporu jest umiarkowany.
 
 ### 4.2. Wierzchołek i lądowanie
 
 Wierzchołek toru nadal wyznacza warunek $v_y(t_H)=0$. Rozwiązując go względem czasu, dostajemy:
 
 $$
-t_H=\frac{1}{\lambda}\ln\left(1+\frac{\lambda v_{0y}}{g}\right).
+t_H=\dfrac{1}{\lambda}\ln\left(1+\dfrac{\lambda v_{0y}}{g}\right).
 $$
 
 Maksymalną wysokość obliczamy przez podstawienie $t_H$ do $y(t)$. Czasu lądowania nie da się tu zapisać za pomocą prostych funkcji elementarnych: dodatni pierwiastek równania $y(T)=0$ wyznaczamy numerycznie. Skrypt stosuje bisekcję, która zawęża przedział zawierający pierwiastek aż do wymaganej precyzji.
@@ -262,9 +297,21 @@ Funkcja `expm1` dokładniej oblicza $e^z-1$ dla małych $z$, co pomaga uniknąć
 
 ## 8. Wnioski i ograniczenia
 
-W modelu idealnym ruch poziomy jest jednostajny, a pionowy jednostajnie przyspieszony. Po eliminacji czasu tor ma kształt paraboli. Przy oporze liniowym prędkość pozioma zanika wykładniczo, a składowa pionowa dąży do prędkości granicznej $-g/\lambda$. Odpowiednie równania można rozwiązać analitycznie, ale czas lądowania znajduje się numerycznie.
+W modelu idealnym ruch poziomy jest jednostajny, a pionowy jednostajnie przyspieszony. Po eliminacji czasu tor ma kształt paraboli. Przy oporze liniowym prędkość pozioma zanika wykładniczo, a składowa pionowa dąży do prędkości granicznej:
 
-Model $\vec F_d=-b\vec v$ jest uproszczeniem. Dla wielu obiektów poruszających się w powietrzu, zwłaszcza przy większych prędkościach, lepszy może być opór kwadratowy $\vec F_d=-c|\vec v|\vec v$. Wtedy składowe ruchu są sprzężone i na ogół trzeba całkować równania numerycznie. Wartość $b$ przyjęta tutaj służy ilustracji metody; wyników nie należy traktować jako prognozy dla konkretnego pocisku bez pomiaru parametrów aerodynamicznych.
+$$
+v_{y,\infty}=-\dfrac{g}{\lambda}.
+$$
+
+Odpowiednie równania można rozwiązać analitycznie, ale czas lądowania znajduje się numerycznie.
+
+Model liniowy jest uproszczeniem. Dla wielu obiektów poruszających się w powietrzu, zwłaszcza przy większych prędkościach, lepszy może być opór kwadratowy:
+
+$$
+\vec{F}_d=-c\lvert\vec{v}\rvert\,\vec{v}.
+$$
+
+Wtedy składowe ruchu są sprzężone i na ogół trzeba całkować równania numerycznie. Wartość $b$ przyjęta tutaj służy ilustracji metody; wyników nie należy traktować jako prognozy dla konkretnego pocisku bez pomiaru parametrów aerodynamicznych.
 
 ## 9. Dalsza lektura
 
