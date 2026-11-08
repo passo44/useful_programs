@@ -137,11 +137,11 @@ W tym modelu składowa pozioma prędkości jest stała, a pionowa maleje liniowo
 
 ![Położenie poziome x w funkcji czasu, z porównaniem modelu idealnego i modelu z oporem](files/rzut/x_czas.svg)
 
-*Rysunek 2. Bez oporu $x(t)$ rośnie liniowo; z oporem pozioma składowa prędkości stopniowo maleje.*
+*Rysunek 2. Bez oporu położenie poziome rośnie liniowo; z oporem tempo jego wzrostu stopniowo maleje.*
 
 ![Wysokość y w funkcji czasu dla modelu bez oporu i modelu z oporem liniowym](files/rzut/y_czas.svg)
 
-*Rysunek 3. Wierzchołek toru występuje, gdy $v_y=0$. Po opadaniu do $y=0$ kończy się czas lotu.*
+*Rysunek 3. W wierzchołku toru prędkość pionowa zanika. Lot kończy się po powrocie ciała na poziom wyrzutu.*
 
 ![Wartość prędkości ciała w czasie dla modelu bez oporu i z oporem](files/rzut/predkosci.svg)
 
@@ -155,7 +155,16 @@ W tym modelu składowa pozioma prędkości jest stała, a pionowa maleje liniowo
 
 ### 4.1. Druga zasada Newtona
 
-Dla prędkości $\vec{v}=(v_x,v_y)$ siła oporu ma składowe przeciwne do ruchu. Z grawitacją $\vec{F}_g=(0,-mg)$ równanie Newtona przyjmuje postać:
+Dla prędkości o składowej poziomej i pionowej siła oporu ma składowe przeciwne do ruchu. Przyjmujemy, że grawitacja działa pionowo w dół:
+
+$$
+\begin{aligned}
+\vec{v} &= (v_x,v_y),\\
+\vec{F}_g &= (0,-mg).
+\end{aligned}
+$$
+
+Równanie Newtona przyjmuje postać:
 
 $$
 m\dot{v}_x=-bv_x,
@@ -231,11 +240,11 @@ Wykresy pokazują te same warunki początkowe co w modelu idealnym. Obraz obejmu
 
 ![Położenie poziome w czasie w modelu z oporem](files/rzut/x_czas.svg)
 
-*Rysunek 7. Nachylenie wykresu $x(t)$ jest równe $v_x(t)$ i maleje wykładniczo.*
+*Rysunek 7. Nachylenie wykresu położenia poziomego odpowiada prędkości poziomej i maleje wykładniczo.*
 
 ![Wysokość w czasie w modelu z oporem](files/rzut/y_czas.svg)
 
-*Rysunek 8. Wznoszenie kończy się po około $0{,}17923\,\mathrm{s}$, gdy prędkość pionowa spada do zera.*
+*Rysunek 8. Wznoszenie kończy się po około 0,17923 s, gdy prędkość pionowa spada do zera.*
 
 ![Szybkość w czasie porównująca rzut bez oporu i z oporem liniowym](files/rzut/predkosci.svg)
 
@@ -243,7 +252,7 @@ Wykresy pokazują te same warunki początkowe co w modelu idealnym. Obraz obejmu
 
 ![Zmiany energii kinetycznej i potencjalnej z uwzględnieniem pracy oporu](files/rzut/energia.svg)
 
-*Rysunek 10. Energia potencjalna jest liczona względem poziomu wyrzutu: $E_p=mgy$. Całkowita energia mechaniczna w obecności oporu maleje.*
+*Rysunek 10. Energię potencjalną liczymy względem poziomu wyrzutu; jest proporcjonalna do masy i wysokości. Całkowita energia mechaniczna w obecności oporu maleje.*
 
 ## 6. Porównanie modeli
 
@@ -260,7 +269,7 @@ Przy przyjętym współczynniku oporu zasięg zmniejsza się o około $0{,}38629
 
 ![Zasięg rzutu w funkcji kąta początkowego, dla stałej prędkości 34 metrów na sekundę, z oporem i bez oporu](files/rzut/zasieg_kat.svg)
 
-*Rysunek 11. Kąt $3^\circ$ jest zaznaczony na wykresie. Krzywe porównują modele dla wielu kątów, ale tabela powyżej dotyczy wyłącznie warunków zadanych w raporcie.*
+*Rysunek 11. Kąt 3 stopnie jest zaznaczony na wykresie. Krzywe porównują modele dla wielu kątów, ale tabela powyżej dotyczy wyłącznie warunków zadanych w raporcie.*
 
 ## 7. Kod i odtwarzanie wykresów
 
